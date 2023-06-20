@@ -1,0 +1,32 @@
+[
+  {
+    "id":"1",
+    "img":"static/roupas/blusa1Nuvem.svg",
+    "title":"Camiseta Beyond the Limits",
+    "price":"79,90"
+  },
+  {
+    "id":"2",
+    "img":"static/roupas/blusa2.svg",
+    "title":"Camiseta Beyond the Limits",
+    "price":"79,90"
+  },
+  {
+    "id":"3",
+    "img":"static/roupas/blusa3.svg",
+    "title":"Camiseta Beyond the Limits",
+    "price":"79,90"
+  }, 
+  {
+    "id":"4",
+    "img":"static/roupas/blusa4.svg",
+    "title":"Camiseta Beyond the Limits",
+    "price":"79,90"  
+  },
+  {
+    "id":"5",
+    "img":"static/roupas/blusa5.svg",
+    "title":"Camiseta Beyond the Limits",
+    "price":"79,90"  
+ }
+]
