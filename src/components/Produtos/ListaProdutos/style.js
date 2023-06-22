@@ -51,7 +51,10 @@ gap: 48px;
 list-style:none;
 overflow-x: auto;
 scroll-behavior: smooth;
-
+li{
+  width: 688px;
+  cursor: pointer;
+}
 .sliderPoint{
   width: 696px;
   height: 656px;

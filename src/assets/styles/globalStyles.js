@@ -7,8 +7,9 @@ export default createGlobalStyle`
   box-sizing: border-box;
   font-family:  Roboto,  sans-serif;
   line-height: 160%;
-  background: ${({theme})=>theme.colors.base.background};
+  //background: ${({theme})=>theme.colors.base.background};
   color: ${({theme})=>theme.colors.base.title};
+  text-decoration: none;
 }
 button{
   cursor: pointer;

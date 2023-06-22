@@ -6,21 +6,23 @@ import _default from "../assets/styles/themes/default";
 import GlobalStyles from "../assets/styles/globalStyles";
 
 import Header from "../components/Header";
-
-import Produtos from "../components/Produtos/ListaProdutos";
+import Routers from "../Routers/router";
 
 import { CartProvider } from "../assets/context/cartContext";
+import { BrowserRouter } from "react-router-dom";
 
 export default function App() {
   return (
     <ThemeProvider theme={_default}>
-      <CartProvider>
-        <GlobalStyles />
-          <Container>
-          <Header />
-          <Produtos />
-          </Container>
-      </CartProvider>
+      <BrowserRouter>
+        <CartProvider>
+          <GlobalStyles />
+              <Container>
+                  <Header />
+                  <Routers />
+              </Container>
+        </CartProvider>
+     </BrowserRouter>
     </ThemeProvider>
   );
 }

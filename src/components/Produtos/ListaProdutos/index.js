@@ -6,16 +6,14 @@ import seta from "../../../assets/images/icons/seta.svg";
 
 import ProdutosGerais from '../Produtos';
 
-
 export default function Produtos() {
   const slider = useRef(null);
-  
   const [data,setData] = useState([]);
-  useEffect(()=>{
-    fetch('http://localhost:3000/static/produtos.json').then((response)=>response.json()).then(setData);
+
+  useEffect(  ()=>{
+     fetch('http://localhost:3000/static/produtos.json').then((response)=>response.json()).then(setData);
   },[])
   
-
   const handleLeft = (e)=>{
      e.preventDefault();
       slider.current.scrollLeft -= slider.current.offsetWidth;
@@ -38,13 +36,13 @@ export default function Produtos() {
         <ProdutosUL ref={slider} id='slider'>
           {
               data.map(({id,img,title,price},index)=> (
-                <li  className='sliderPoint'> 
+                <li  className='sliderPoint' key={id} > 
                   <ProdutosGerais 
                       key={id}
                       img={img}
                       title={title}
                       price={price}
-                      index={index}
+                      index={index}   
                   />
                 </li>
             )
